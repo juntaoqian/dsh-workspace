@@ -1,0 +1,22 @@
+[submodule "plugins/dsh-purge"]
+	path = plugins/dsh-purge
+	url = https://github.com/YuJunZhiXue/dsh-purge.git
+	branch = master
+
+[submodule "plugins/dsh-vars"]
+	path = plugins/dsh-vars
+	url = https://github.com/juntaoqian/dsh-vars.git
+	branch = main
+
+
+[submodule "plugins/dsh-remote-v2"]
+	path = plugins/dsh-remote-v2
+	url = https://github.com/juntaoqian/dsh-remote-v2.git
+	branch = main
+
+
+[submodule "plugins/dsh-traffic-light"]
+	path = plugins/dsh-traffic-light
+	url = https://github.com/juntaoqian/dsh-traffic-light.git
+	branch = main
+
