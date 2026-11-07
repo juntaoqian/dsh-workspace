@@ -23,3 +23,7 @@ desktop.ini
 .env
 .env.*
 *.local.json
+
+# MCP server 本地安装物（源码 + venv，用 tools/idalib-mcp.ps1 bootstrap 复现）
+mcp/idalib-mcp/
+mcp/ida-pro-mcp-src/

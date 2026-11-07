@@ -26,11 +26,15 @@ default-workspace/
 │  ├─ build.ps1              # dsh-purge：构建 client / prompt / profile / dock
 │  ├─ report.ps1             # dsh-purge：演练成果报告导出
 │  ├─ vars.ps1               # dsh-vars：test / install / uninstall / validate
+│  ├─ idalib-mcp.ps1         # idalib-mcp：check / probe / start / config / install / bootstrap
 │  ├─ sync.ps1               # 全部插件上游同步（自动扫描 plugins/*）
 │  └─ doctor.ps1             # 全部插件 + 宿主 + 清洗状态体检
 ├─ docs/
 │  ├─ README.md              # 文档索引
 │  └─ repos.md               # GitHub 仓库管理台账（现状矩阵 / 缺口 / 修复片段）
+├─ mcp/
+│  ├─ README.md              # MCP server 安装记录 + 验证结果 + 已知坑
+│  └─ probe_idalib_mcp.py    # MCP 协议探针（initialize / tools/list / idalib_list）
 └─ skills/
    └─ README.md              # 23 条 redteam 技能索引
 ```
@@ -87,6 +91,11 @@ git remote set-url origin git@github.com:juntaoqian/<实际仓库名>.git
 .\tools\vars.ps1 test
 .\tools\vars.ps1 install
 .\tools\vars.ps1 validate
+
+# idalib-mcp：体检 / 协议探针 / 启动（分析需要 IDA Pro 9.x）
+.\tools\idalib-mcp.ps1 check
+.\tools\idalib-mcp.ps1 probe
+.\tools\idalib-mcp.ps1 start -IdaHome D:\IDA_PRO_9.1
 
 # 全部插件：同步 / 单体检查 / 体检
 .\tools\sync.ps1
